@@ -10,6 +10,7 @@ app = create_app()
 db = SQLAlchemy(app)
 engine = create_engine(SQLALCHEMY_DATABASE_URI, convert_unicode=True)
 
+
 from api.models import SuperHero, Status
 
 @app.route('/heroes/', methods=['GET'])
